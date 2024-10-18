@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+       function addition(num) {
+        
+    if (num < 0) {
+        throw new Error("Input must be a non-negative integer.");
+    }
+    
+    return num.toString().split('').reduce((sum, digit) => sum + Number(digit), 0);
+}
+let outcome = addition(10018);
+console.log(outcome);
+
+</script>
+</html>
